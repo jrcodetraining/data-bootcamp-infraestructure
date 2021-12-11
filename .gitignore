@@ -1,3 +1,5 @@
+.idea/
+
 # Local .terraform directories
 **/.terraform/*
 
@@ -12,7 +14,7 @@ crash.log
 # .tfvars files are managed as part of configuration and so should be included in
 # version control.
 #
-# example.tfvars
+*.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
@@ -20,6 +22,9 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+*.tfplan
+*.terraform.**
+*.json
 
 # Include override files you do wish to add to version control using negated pattern
 #
@@ -27,3 +32,11 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+© 2021 GitHub, Inc.
+
+#kubeconfigfile
+kubeconfig*
